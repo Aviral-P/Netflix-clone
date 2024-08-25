@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: rgb(39, 39, 39);
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.main {
+    background-image: url(hero.jpg);
+    background-size: cover; /* Adjust background size */
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 77vh;
+    width: 100%;
+    position: relative;
+}
+
+.main .box {
+    background-color: black;
+    height: 77vh;
+    width: 100%;
+    opacity: 0.65;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin: auto;
+    padding: 0 10px; /* Add padding for small screens */
+    box-sizing: border-box;
+}
+
+nav img {
+    color: red;
+    position: relative;
+    z-index: 10;
+}
+
+nav div {
+    display: flex;
+    gap: 15px;
+}
+
+nav select {
+    position: relative;
+    padding: 4px 25px;
+    background: initial;
+    cursor: pointer;
+}
+
+nav button {
+    position: relative;
+    background-color: rgb(229, 9, 20);
+    font-size: 15px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navi {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    margin: auto;
+    margin-top: 23vh;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.hero>div {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row; /* Ensure vertical alignment on small screens */
+}
+
+.info>input {
+    background-color: rgba(23, 23, 23, 0.7);
+    font-size: 20px;
+    padding: 9px 150px 9px 1px;
+    color: white;
+    border: 1px solid rgba(228, 228, 228, 0.7);
+    border-radius: 5px;
+}
+
+.info>button {
+    background-color: rgb(229, 9, 20);
+    border: none;
+    border-radius: 5px;
+    font-size: 27px;
+    font-weight: 600;
+    padding: 7px 24px;
+}
+
+.first {
+    margin-top: 8px;
+    background-color: black;
+    height: 62vh;
+    width: 100%;
+}
+
+.grid1 {
+    margin: auto;
+    width: 70vw;
+    height: 62vh;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.grid1>div:not(:first-child) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.grid1 img {
+    position: relative;
+    z-index: 10;
+}
+
+.second {
+    margin-top: 8px;
+    background-color: black;
+    height: 62vh;
+    width: 100%;
+}
+
+.boxshot {
+    border: 2px solid white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 15px;
+    width: 20vw;
+    padding: 5px;
+    border-radius: 10px;
+    transform: translateY(15vh);
+    position: relative;
+}
+
+.grid2 {
+    margin: auto;
+    width: 70vw;
+    height: 62vh;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.grid2>div:not(:last-child) {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.third {
+    margin-top: 8px;
+    background-color: black;
+    height: 62vh;
+    width: 100%;
+}
+
+.grid3 {
+    margin: auto;
+    width: 70vw;
+    height: 62vh;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.grid3>div:not(:first-child) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.grid3 img {
+    position: relative;
+    z-index: 10;
+}
+
+.grid3 video {
+    transform: translateY(-75px);
+    width: 420px;
+}
+
+.fourth {
+    margin-top: 8px;
+    background-color: black;
+    height: 62vh;
+    width: 100%;
+}
+
+.grid4 {
+    margin: auto;
+    width: 70vw;
+    height: 62vh;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.fifth {
+    margin-top: 8px;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.fifth>div:not(:first-child) {
+    margin: auto;
+    text-align: left;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 5vh;
+    background-color: rgb(39, 39, 39);
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 20px 10px 10px 15px;
+}
+
+.fifth>div:not(:first-child):hover {
+    background-color: rgb(90, 90, 90);
+}
+
+.fifth>p {
+    margin-top: 30px;
+}
+
+.sixth {
+    margin-top: 8px;
+    background-color: black;
+    height: 44vh;
+    width: 100%;
+}
+
+.sixth select {
+    padding: 4px 25px;
+    background: initial;
+}
+
+ul>li {
+    text-decoration: underline;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.grid6 {
+    margin: auto;
+    width: 70vw;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+    @media (max-width: 1200px) {
+        nav {
+            max-width: 80vw;
+            height: 90px;
+        }
+    
+        .grid1, .grid2, .grid3, .grid4 {
+            width: 80vw;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        nav {
+            max-width: 90vw;
+            height: 80px;
+        }
+    
+        h1 {
+            font-size: 40px;
+        }
+    
+        h2 {
+            font-size: 22px;
+        }
+    
+        .info > input {
+            padding: 8px 120px;
+            font-size: 18px;
+        }
+    
+        .info > button {
+            font-size: 24px;
+            padding: 6px 20px;
+        }
+    
+        .grid1, .grid2, .grid3, .grid4 {
+            grid-template-columns: 1fr;
+        }
+    
+        .boxshot {
+            width: 25vw;
+        }
+    
+        .fifth > div:not(:first-child) {
+            width: 70vw;
+        }
+    
+        .sixth ul {
+            flex-direction: column;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        nav {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 10px;
+        }
+    
+        nav div {
+            margin-top: 10px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .hero {
+            margin-top: 15vh;
+        }
+    
+        h1 {
+            font-size: 30px;
+        }
+    
+        h2 {
+            font-size: 20px;
+        }
+    
+        .info > input {
+            padding: 8px 10px;
+            font-size: 16px;
+        }
+    
+        .info > button {
+            font-size: 20px;
+            padding: 6px 15px;
+        }
+    
+        .grid1, .grid2, .grid3, .grid4 {
+            grid-template-columns: 1fr;
+        }
+    
+        .boxshot {
+            width: 30vw;
+        }
+    
+        .fifth > div:not(:first-child) {
+            width: 80vw;
+        }
+    
+        .sixth ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 24px;
+        }
+    
+        h2 {
+            font-size: 18px;
+        }
+    
+        .info > input {
+            width: 90%;
+            padding: 8px 5px;
+            font-size: 14px;
+        }
+    
+        .info > button {
+            font-size: 18px;
+            padding: 6px 12px;
+        }
+    
+        .grid6 {
+            grid-template-columns: 1fr;
+            width: 90vw;
+        }
+    
+        .boxshot {
+            width: 40vw;
+        }
+    
+        .fifth > div:not(:first-child) {
+            width: 90vw;
+        }
+    }
